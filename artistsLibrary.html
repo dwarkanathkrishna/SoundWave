@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists Library</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333333;
+            color:#E4C3AD;
+            text-align: center;
+            padding: 1rem;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #555555;
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .artist-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px;
+        }
+
+        .artist-image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+
+        .artist-name {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .song-name {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa fa-headphones"></i> SoundWave Artists Library</h1>
+    </header>
+    <div id="content">
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/po72jCTVNYGg42Yi_5sADQpZtrKK9l6lTmtPz6haal4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLmRp/c2NvZ3MuY29tL01o/MGUzWlllaTJMQW5Y/emRaRHp6a1lIQWNs/Q3FLVlhVbXJJd1By/M2wzRGMvcnM6Zml0/L2c6c20vcTo0MC9o/OjMwMC93OjMwMC9j/ek02THk5a2FYTmpi/MmR6L0xXUmhkR0Zp/WVhObExXbHQvWVdk/bGN5OUJMVEV5Tmpr/dy9Oemd0TVRVek5q/WTVOREF4L05TMDJN/RE15TG1wd1pXYy5q/cGVn');"></div>
+            <div class="artist-name">Cecilia Krull</div>
+        </div>
+        
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/exZMg-lYOa11zzAn4GHy742xSbEZj2viT3lkazRnviI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgw/MjQ5MjEwL3Bob3Rv/L2Jlcmxpbi1nZXJt/YW55LWF1c3RyYWxp/YW4tc2luZ2VyLWxl/bmthLXBlcmZvcm1z/LWxpdmUtZHVyaW5n/LWEtY29uY2VydC1h/dC10aGUtcG9zdGJh/aG5ob2Ytb24uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTBX/VHBZYlVSMTg2elI4/QVRmN1hPLUNVRURp/RDgzRGZ0eXc1WDU1/RVFTNUk9');"></div>
+            <div class="artist-name">Lenska</div>
+        </div>
+
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/vNQcLOjAcgM1B-baUhBAKxLdCVzf2eyg_vuBcUZnOTs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjEz/NDYzMTI0L3Bob3Rv/L3RoZS1yb2NrLWJh/bmQtcXVlZW4taW4t/Y29uY2VydC1pbi0x/OTg0LWxlYWQtc2lu/Z2VyLWZyZWRkaWUt/bWVyY3VyeS1qb2hu/LWRlYWNvbi1hbmQt/YnJpYW4tbWF5Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz0x/SVFHeEVqdVVpemtK/c2ZpUTZ6cnd3bG84/THhqQndia1ViRlVQ/SWN4LWpvPQ');"></div>
+            <div class="artist-name">Queen</div>
+        </div>
+
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://i1.sndcdn.com/avatars-GBhEb4pyHIRKyPfO-9aDwAw-t240x240.jpg');"></div>
+            <div class="artist-name">Shubh</div>
+        </div>
+
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/I_YPGq06OOLYuTGAccykGqT4bK0v7fYftOA-eQSW2to/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aW1hZ2VkaWFtb25k/LmNvbS9ibG9nL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzEx/L0tha2EtUHVuamFi/aS1TaW5nZXItSW1h/Z2VzLTYuanBn');"></div>
+            <div class="artist-name">Kaka</div>
+        </div>
+
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/47HnYkSb0rMztEWpl8zSbg1OUTCo-ts_uhwM-S_cYeU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWdr/LnRpbWVzbm93bmV3/cy5jb20vc3Rvcnkv/U2NyZWVuc2hvdF81/MzI5LnBuZz90cj13/LTYwMCxoLTQ1MCxm/by1hdXRv');"></div>
+            <div class="artist-name">Yashraj Mukhate</div>
+        </div>
+
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/-gMJVF2f_CjJ0abCflpo931Nd8J8yRpaitfrGjeOR6o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlptSXlNMlE1/TWpjdE1EUmxNaTAw/WTJGaExXSmtNelF0/TXpBeU16YzNNamht/WkdKaVhrRXlYa0Zx/Y0dkZVFYVnlORFV6/T1RRNU1qWUAuanBn');"></div>
+            <div class="artist-name">Alisha Chinai</div>
+        </div>
+
+        <div class="artist-box">
+            <div class="artist-image" style="background-image:url('https://imgs.search.brave.com/Is_mxMJIRhCPh2T2niLKWL3nnFxF-Gxwqx5EhjfCSH4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/LzgzL0hpbWVzaF9S/ZXNoYW1taXlhX3dp/dGhfdGVhbV9vZl8n/SHVtc2hha2Fscydf/YXRfSGFzZWVfSG91/c2Vfb25fU3Rhcl9Q/bHVzLmpwZw');"></div>
+            <div class="artist-name">Himesh Reshammiya</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
