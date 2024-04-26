@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Music Player</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="left">
+        <div id="leftTop">
+            <div id="leftTopTop"><p class="leftSideText"><a href="homepage.html" style="text-decoration:none" >&nbsp;<i class="fa fa-home"></i>&nbsp;Home</a></p></div>
+            <div id="leftTopBottom"><p class="leftSideText">&nbsp;<i class="fa fa-search"></i>&nbsp;Search</p></div>
+        </div>
+        <div id="leftMiddle">
+            <div id="leftMiddleTop">
+                <p class="leftSideText">Songs Library<a href="songsLibrary.html"style="text-decoration:none"target="_main8">&nbsp;&nbsp;+</a></p>
+            </div>
+            <div id="leftMiddleMiddle">
+                <p class="leftSideText">Artists Library <a href="artistsLibrary.html"style="text-decoration:none"target="_main9">&nbsp;+</a></p>
+            </div>
+            <div id="leftMiddleBottom">
+                <p class="leftSideText">Create your own playlist<a href="ownPlaylist.html" style="text-decoration:none" target="_main10">&nbsp;&nbsp;&nbsp;&nbsp;+</a></p>
+            </div>
+        </div>
+        <div id="leftBottom">
+            <div id="leftBottomFirst">
+                <p class="leftSideText2"><a href="browsePlans.html" style="text-decoration:none"target="_main1">Browse Plans</a></p>
+            </div>
+            <div id="leftBottomSecond">
+                <p class="leftSideText2"><a href="mobileApp.html" style="text-decoration:none"target="_main2">Mobile App</a></p>
+            </div>
+            <div id="leftBottomThird">
+                <p class="leftSideText2"><a href="privacyPolicy.html" style="text-decoration:none"target="_main3">Privacy Policy</a></p>
+            </div>
+            <div id="leftBottomFourth">
+                <p class="leftSideText2"><a href="contactUs.html" style="text-decoration:none"target="_main4">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="rightTop">
+            <div id=rightTopLeft>
+                <p id="titleHeading" style="font-weight:bolder">&nbsp;<i class="fa fa-headphones"></i>&nbsp;SoundWave</p>
+            </div>
+
+            <div id="rightTopRight">
+                <p class="text"><a href="buyPremium.html" style="text-decoration:none" target="_main7">Buy
+                        Premium</a></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="text"><a href="signup.html" target="_main5" style="text-decoration:none" >Sign up</a></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="text"><a href="login.html" style="text-decoration:none"target="_main6">Log in</a></p>
+            </div>
+        </div>
+        <div id="rightBottom">
+            <div id="rightBottomUp">
+                <div class="rightBottomBoxes" id="firstBox"></div>
+                <div class="rightBottomBoxes" id="secondBox"></div>
+                <div class="rightBottomBoxes" id="thirdBox"></div>
+                <div class="rightBottomBoxes" id="fourthBox"></div>
+            </div>
+            <div id="rightBottomDown">
+                <button class="traversingButtons" onclick="previousSong()"><i class="fa fa-angle-left"></i></button>
+                <div class="text">Previous/Next</div>
+                <button class="traversingButtons" onclick="nextSong()"><i class="fa fa-angle-right"></i></button>
+            </div>
+            <div id="currentSong">
+                <p class="text">Current Song:</p><span id="profilePicture"></span>
+                <div class="text" id="songName" style="width:150px;">----------------&nbsp;&nbsp;</div>
+                <div id="songName"></div>
+                <div id="CurrentSongBar">
+                    <button class="playingButton" onclick="playPreviousSong()"><img src="https://imgs.search.brave.com/6e3rNCQu6VRGHtJkJNme__l6C2Ou8NYvrerJmMtUKU0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxsLWZyZWUt/ZG93bmxvYWQuY29t/L2ltYWdlcy90aHVt/YmpwZy9idXR0b25f/Zmlyc3RfODk2NzEu/anBn"></button>
+                    <button id="pausePlayButton" onclick="togglePlayPause()"><i id="playPauseIcon" class="fa fa-pause"></i></button>
+                    <button class="playingButton" onclick="playNextSong()"><img src="https://imgs.search.brave.com/Ow5RzuDTgrNjAU8E-8It4h7vBq59beuTxHiim8nv85U/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxsLWZyZWUt/ZG93bmxvYWQuY29t/L2ltYWdlcy90aHVt/YmpwZy9idXR0b25f/bGFzdF84OTY3NC5q/cGc"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div id="searchBackdrop" class="backdrop"></div>
+    <div id="searchBar" class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
