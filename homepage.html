@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Home Page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            background-image: url("background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #f0f0f0; 
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        header {
+            margin-left: 300px;
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color:#E4C3AD;
+        }
+
+        .leftContent {
+            margin-top: 50px;
+            text-align: left;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .text {
+            opacity: 0;
+            animation: fadeInOut 6s infinite;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+        }
+
+        .text:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .text:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        .text:nth-child(3) {
+            animation-delay: 3s;
+        }
+
+        .text:nth-child(4) {
+            animation-delay: 4.5s;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            20%, 80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #startButton {
+            margin-top: 30px;
+            margin-left: 100px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            color: #ffffff;
+            background-color: #4CAF50; 
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #startButton:hover {
+            background-color: #45a049; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa fa-headphones"></i> SoundWave</h1>
+    </header>
+    <div class="leftContent">
+        <div class="text">Dive into the world of SoundWave</div>
+        <div class="text">Your Ultimate Destination for music streaming</div>
+        <div class="text">Discover endless music possibilities</div>
+        <div class="text">Experience the best audio quality</div>
+        <button id="startButton"><a href="index.html" style="text-decoration:none;color:white;">Get Started</a></button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const texts = document.querySelectorAll('.text');
+            let index = 0;
+
+            function toggleText() {
+                texts[index].classList.remove('active');
+                index = (index + 1) % texts.length;
+                texts[index].classList.add('active');
+            }
+
+            setInterval(toggleText, 6000); 
+        });
+    </script>
+</body>
+
+</html>

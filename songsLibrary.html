@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs Library</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333333;
+            color:#E4C3AD;
+            text-align: center;
+            padding: 1rem;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #555555;
+        }
+
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .song-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .song-image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+
+        .song-name {
+            font-size: 14px;
+            text-align: center;
+            color: white;
+        }
+
+        .artist-name {
+            font-size: 12px;
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .year {
+            font-size: 12px;
+            display: block;
+            margin-top: 5px;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa fa-headphones"></i> SoundWave Songs Library</h1>
+    </header>
+    <div id="content">
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://imgs.search.brave.com/xdhDHRwSNDNEB0SjzzniCQs5LHExu6DOX6EGaAGPG0s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODEyc3UzclQ3bkwu/anBn')"></div>
+            <div class="song-name">My Life is Going on</div>
+            <div class="artist-name"><span class="year">(2017)</span></div>
+        </div>
+        
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://imgs.search.brave.com/uMJ8JUbpkIIYzQWeKfP6ngtom_mkieFOc9D7Db0oIXw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2xl/bmthL2ltYWdlcy9h/L2FkL0xlbmthLWV2/ZXJ5dGhpbmdfYXRf/b25jZV9zLmpwZy9y/ZXZpc2lvbi9sYXRl/c3Qvc2NhbGUtdG8t/d2lkdGgtZG93bi8y/MTA_Y2I9MjAxMzA4/MDQwNjU5MzI.jpeg')"></div>
+            <div class="song-name">Everything At Once</div>
+            <div class="artist-name"><span class="year">(2012)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://imgs.search.brave.com/5i_ieuOv_ThW7xV_gXhgvF6UemxmlfSfE2S34sAuFd8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDQ3NjA1/OTYuanBn')"></div>
+            <div class="song-name">Bella Ciao</div>
+            <div class="artist-name"><span class="year">(2017)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://images.backstreetmerch.com/images/products/films/misc/wwry/bsi_wwry07.png')"></div>
+            <div class="song-name">We Will Rock You</div>
+            <div class="artist-name"><span class="year">(1977)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://i1.sndcdn.com/artworks-lMx1UBF0kfOytYGf-CWN2Uw-t500x500.jpg')"></div>
+            <div class="song-name">Baller</div>
+            <div class="artist-name"><span class="year">(2022)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://i.scdn.co/image/ab67616d0000b273d2cb1c16206718e992b73819')"></div>
+            <div class="song-name">Kajra Re</div>
+            <div class="artist-name"><span class="year">(2005)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://c.saavncdn.com/523/Mitti-De-Tibbe-Punjabi-2022-20220719125943-500x500.jpg')"></div>
+            <div class="song-name">Mitti De Tibbe</div>
+            <div class="artist-name"><span class="year">(2022)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3MiDohzSk8Awody9D2oT33y-6Mq_AeSsh8RxtX0FkHw&s')"></div>
+            <div class="song-name">Naagin</div>
+            <div class="artist-name"><span class="year">(1989)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://images.saymedia-content.com/.image/t_share/MTc2Mjg4NjgyODYzNTAyNTA5/deathnotethemes.gif')"></div>
+            <div class="song-name">Death Note</div>
+            <div class="artist-name"><span class="year">(2006)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGuYk1MtyO1snTSJkqImaLNA5HhvNSun-rBTUA4qB70SyhMr1myULxuEApmFP2akBPLY&usqp=CAU')"></div>
+            <div class="song-name">Shaktimaan</div>
+            <div class="artist-name"><span class="year">(1997)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://www.bollywooddjsclub.co.in/wp-content/uploads/2022/07/Bin-Tere-Sanam-Remix-DJ-AY.jpg')"></div>
+            <div class="song-name">Aana Hi Pada Sajna</div>
+            <div class="artist-name"><span class="year">(1991)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://i.ytimg.com/vi/pc5dl8eZ6sg/hqdefault.jpg')"></div>
+            <div class="song-name">Ae Meri Zohrajabeen</div>
+            <div class="artist-name"><span class="year">(2006)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://i.ytimg.com/vi/AOIVPqDm06g/hqdefault.jpg')"></div>
+            <div class="song-name">Double Trouble</div>
+            <div class="artist-name"><span class="year">(2004)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://c.saavncdn.com/086/Mass-2004-500x500.jpg')"></div>
+            <div class="song-name">Mass</div>
+            <div class="artist-name"><span class="year">(2004)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/22/57/ec/2257ec78-dc30-79f2-5858-31fb27e11801/cover.jpg/600x600bf-60.jpg')"></div>
+            <div class="song-name">Bing Bing Boo</div>
+            <div class="artist-name"><span class="year">(2021)</span></div>
+        </div>
+
+        <div class="song-box">
+            <div class="song-image" style="background-image:url('https://c.saavncdn.com/125/Daru-Badnaam-Punjabi-2016-20191010170948-500x500.jpg')"></div>
+            <div class="song-name">Daaru Badnaam</div>
+            <div class="artist-name"><span class="year">(2016)</span></div>
+        </div>
+    </div>
+</body>
+
+</html>

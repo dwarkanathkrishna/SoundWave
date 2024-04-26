@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Sign Up</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333333;
+            color:#E4C3AD;
+            text-align: left; 
+            padding: 1rem 0;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            padding-left: 2rem; 
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #333333;
+            border-radius: 10px;
+            width: 60%;
+            margin: 3% auto;
+            padding: 2rem;
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #heading {
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #555555;
+            border-radius: 4px;
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        #submit {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 0.8rem 2rem;
+            margin-top: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        #submit:hover {
+            background-color: #45a049;
+        }
+
+        .box {
+            border: 2px solid #555555;
+            margin: 1rem 0;
+            padding: 0.8rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #aaaaaa;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .box:hover {
+            border-color: #777777;
+            background-color:#555555;
+            color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fa fa-headphones"></i> SoundWave</h1>
+    </header>
+    <div id="content">
+        <p id="heading">Sign up to start listening</p>
+        <input type="text" id="email" placeholder="Email address">
+        <input type="text" id="phone" placeholder="Phone number">
+        <input type="text" id="name" placeholder="Name">
+        <button id="submit">Sign Up</button>
+        <p>or</p>
+        <div class="box">Continue with Google</div>
+        <div class="box">Continue with Facebook</div>
+        <div class="box">Continue with Apple</div>
+        <div class="box">Continue with Phone number</div>
+    </div>
+    <script>
+        var button = document.getElementById('submit');
+        var email = document.getElementById('email');
+        var phone = document.getElementById('phone');
+        var Name = document.getElementById('name');
+        button.addEventListener('click', function() {
+            if (email.value.trim() === '' || phone.value.trim() === '' || Name.value.trim() === '') {
+                alert('Please fill in all the fields.');
+            } else {
+                alert('Sign up successful!');
+                email.value = '';
+                phone.value='';
+                Name.value='';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Buy Premium</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333333;
+            color:#E4C3AD;
+            text-align: center;
+            padding: 1rem;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #555555;
+        }
+
+        #content {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .text {
+            width: 60%;
+            font-size: 1.2rem;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        label {
+            margin-right: 1.5rem;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        #code {
+            width: 35%;
+            text-align: center;
+        }
+
+        #message {
+            color: white;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <i class="fa fa-headphones"></i> SoundWave
+    </header>
+    <div id="content">
+        <div class="text">
+            <h2>Select your plan:</h2>
+            <form>
+                <label><input type="radio" name="plan" value="Basic" id="Basic" onclick="pricing1()"> Basic</label>
+                <label><input type="radio" name="plan" value="Premium" id="Premium" onclick="pricing2()"> Premium</label>
+                <label><input type="radio" name="plan" value="Family" id="Family" onclick="pricing3()"> Family</label>
+                <label><input type="radio" name="plan" value="Student" id="Student" onclick="pricing4()"> Student</label>
+            </form>
+            <div id="price"></div>
+        </div>
+        <div id="code"></div>
+    </div>
+    <div id="message"></div>
+
+    <script>
+        function pricing1() {
+            document.getElementById("price").innerText = "Amount to be paid: $5";
+            showQR();
+            showMessage();
+        }
+
+        function pricing2() {
+            document.getElementById("price").innerText = "Amount to be paid: $10";
+            showQR();
+            showMessage();
+        }
+
+        function pricing3() {
+            document.getElementById("price").innerText = "Amount to be paid: $15";
+            showQR();
+            showMessage();
+        }
+
+        function pricing4() {
+            document.getElementById("price").innerText = "Amount to be paid: $4";
+            showQR();
+            showMessage();
+        }
+
+        function showQR() {
+            document.getElementById("code").innerHTML = '<img src="qr.png" alt="QR Code">';
+        }
+
+        function showMessage() {
+            document.getElementById("message").innerText = "Scan the QR code and make the payment to purchase the plan of your choice";
+        }
+    </script>
+</body>
+
+</html>

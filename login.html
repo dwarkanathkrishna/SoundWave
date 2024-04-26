@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Log in</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333333;
+            color:#E4C3AD;
+            text-align: left; 
+            padding: 0.8rem 1.5rem; 
+            font-size: 1.2rem;
+        }
+
+        #content {
+            margin: 4% auto;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #333333;
+            border-radius: 8px;
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .box {
+            margin: 0.8rem 0;
+            padding: 0.8rem;
+            color: #aaaaaa;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            border: 2px solid #555555;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .box:hover {
+            color: #ffffff;
+            background-color: #555555;
+            border-color: #777777;
+        }
+
+        #submit {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 0.8rem;
+            margin: 0.8rem 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        #submit:hover {
+            background-color: #45a049;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.4rem;
+            margin: 0.4rem 0;
+            border: 1px solid #555555;
+            border-radius: 2px;
+            font-size: 0.9rem;
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        #heading {
+            margin: 0.4rem 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        #submit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fa fa-headphones"></i> SoundWave</h1>
+    </header>
+    <div id="content">
+        <p id="heading">Log in to SoundWave</p>
+        <div id="fifth">
+            <label for="email">Email or Username</label>
+            <input type="text" id="email" placeholder="Email or Username">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <button id="submit">Log in</button>
+        </div>
+        or<br>
+        <div class="box">Continue with Google</div>
+        <div class="box">Continue with Facebook</div>
+        <div class="box">Continue with Apple</div>
+        <div class="box">Continue with Phone number</div>
+    </div>
+    <script>
+        var button = document.getElementById('submit');
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+
+        button.addEventListener('click', function() {
+            if (email.value.trim() === '' || password.value.trim() === '') {
+                alert('Please fill in both Email/Username and Password fields.');
+            } else {
+                alert('Log in successful!');
+                email.value = '';
+                password.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
